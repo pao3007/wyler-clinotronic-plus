@@ -10,18 +10,18 @@ serial number on the device, device name consists of communication method (rs485
 
 Read angle in degrees: 
 ```python
-angle = wcp.get_angle_in_deg(index)
+angle_deg = wcp.get_angle_in_deg(index)
 ```
 dotnet library returns list of values, as we can sample data from multiple devices/channels, so we need to specify which value to read, if we have only one device with one channel ```index=0```
 
 radians: 
 ```python
-wcp.get_angle_in_rad(index)
+angle_rad = wcp.get_angle_in_rad(index)
 ```
 
 Read temperature in Celsius:
 ```python
-wcp.get_temperature_in_celsius(index)
+temperature = wcp.get_temperature_in_celsius(index)
 ```
 
 Stop sampling: 
